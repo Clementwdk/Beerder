@@ -18,15 +18,23 @@ import Foundation
  var note: Int8
  var name: String
  var barCode: String // Pas sur du string
- var commentaire: String
+ var commentaire: String?
  var photo: String
- }
+
+    init(name: String, brand: Brand, type: String, power: String, barCode: String, bar : [Bar] = [] , photo: String){
+        self.name = name
+        self.brand = brand
+        self.type = type
+        self.power = power
+        self.barCode = barCode
+        self.bar = bar
+        self.photo = photo
+        self.note = 0
+    }
+} 
 
 
 
-/*   func AddBar(barMore :Bar,beerthis: Beer)
- {
-    beerthis.bar.append(batMore :Bar)
-}*/
+
  
 

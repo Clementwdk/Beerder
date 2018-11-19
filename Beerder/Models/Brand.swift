@@ -7,9 +7,18 @@
 //
 
 import Foundation
+
 struct Brand{
     var name : String
     var place : String
     var note : Int8
     var history: String
+
+    init(name: String, place: String, history: String){
+        self.name = name
+        self.place = place
+        self.history = history
+        self.note = 0
+    }
+    
 }
