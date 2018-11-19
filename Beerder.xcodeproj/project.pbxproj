@@ -14,6 +14,9 @@
 		8B0E41BA21A2FF7E0012FF27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0E41B821A2FF7E0012FF27 /* LaunchScreen.storyboard */; };
 		8B0E41C521A2FF7E0012FF27 /* BeerderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E41C421A2FF7E0012FF27 /* BeerderTests.swift */; };
 		8B0E41D021A2FF7E0012FF27 /* BeerderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E41CF21A2FF7E0012FF27 /* BeerderUITests.swift */; };
+		8B0E41E121A30AF60012FF27 /* Commerce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E41E021A30AF60012FF27 /* Commerce.swift */; };
+		8B0E41E321A30B650012FF27 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E41E221A30B650012FF27 /* Brand.swift */; };
+		8B0E41E521A30BB00012FF27 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E41E421A30BB00012FF27 /* Beer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		8B0E41CB21A2FF7E0012FF27 /* BeerderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0E41CF21A2FF7E0012FF27 /* BeerderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerderUITests.swift; sourceTree = "<group>"; };
 		8B0E41D121A2FF7E0012FF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B0E41E021A30AF60012FF27 /* Commerce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commerce.swift; sourceTree = "<group>"; };
+		8B0E41E221A30B650012FF27 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
+		8B0E41E421A30BB00012FF27 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		8B0E41AE21A2FF7E0012FF27 /* Beerder */ = {
 			isa = PBXGroup;
 			children = (
+				8B0E41DF21A30AC20012FF27 /* Models */,
 				8B0E41AF21A2FF7E0012FF27 /* AppDelegate.swift */,
 				8B0E41B121A2FF7E0012FF27 /* ViewController.swift */,
 				8B0E41B321A2FF7E0012FF27 /* Main.storyboard */,
@@ -123,6 +130,16 @@
 				8B0E41D121A2FF7E0012FF27 /* Info.plist */,
 			);
 			path = BeerderUITests;
+			sourceTree = "<group>";
+		};
+		8B0E41DF21A30AC20012FF27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B0E41E021A30AF60012FF27 /* Commerce.swift */,
+				8B0E41E221A30B650012FF27 /* Brand.swift */,
+				8B0E41E421A30BB00012FF27 /* Beer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B0E41B221A2FF7E0012FF27 /* ViewController.swift in Sources */,
+				8B0E41E321A30B650012FF27 /* Brand.swift in Sources */,
+				8B0E41E521A30BB00012FF27 /* Beer.swift in Sources */,
 				8B0E41B021A2FF7E0012FF27 /* AppDelegate.swift in Sources */,
+				8B0E41E121A30AF60012FF27 /* Commerce.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
