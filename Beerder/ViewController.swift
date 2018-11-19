@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
 }
 /*
-test allan */
+test allan 2 */
 /*
  
  struct Beer{
