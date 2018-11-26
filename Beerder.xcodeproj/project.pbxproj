@@ -15,6 +15,12 @@
 		8B0E41C521A2FF7E0012FF27 /* BeerderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E41C421A2FF7E0012FF27 /* BeerderTests.swift */; };
 		8B0E41D021A2FF7E0012FF27 /* BeerderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E41CF21A2FF7E0012FF27 /* BeerderUITests.swift */; };
 		8B5CDE8B21A40D3300CD2C4A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B5CDE8921A40D3300CD2C4A /* Model.xcdatamodeld */; };
+		8B8EA06321AC271D00A596C3 /* AccueilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06221AC271D00A596C3 /* AccueilViewController.swift */; };
+		8B8EA06521AC286400A596C3 /* SearchBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06421AC286400A596C3 /* SearchBeerViewController.swift */; };
+		8B8EA06721AC292900A596C3 /* DiscoverBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06621AC292900A596C3 /* DiscoverBeerViewController.swift */; };
+		8B8EA06921AC29E300A596C3 /* EditAppDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06821AC29E300A596C3 /* EditAppDataViewController.swift */; };
+		8B8EA06B21AC359000A596C3 /* EditSingleCellDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06A21AC359000A596C3 /* EditSingleCellDataViewController.swift */; };
+		8BF9BEA321AC1774000CC3F5 /* NewBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF9BEA221AC1774000CC3F5 /* NewBeerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		8B0E41CF21A2FF7E0012FF27 /* BeerderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerderUITests.swift; sourceTree = "<group>"; };
 		8B0E41D121A2FF7E0012FF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B5CDE8A21A40D3300CD2C4A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8B8EA06221AC271D00A596C3 /* AccueilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccueilViewController.swift; sourceTree = "<group>"; };
+		8B8EA06421AC286400A596C3 /* SearchBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBeerViewController.swift; sourceTree = "<group>"; };
+		8B8EA06621AC292900A596C3 /* DiscoverBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverBeerViewController.swift; sourceTree = "<group>"; };
+		8B8EA06821AC29E300A596C3 /* EditAppDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAppDataViewController.swift; sourceTree = "<group>"; };
+		8B8EA06A21AC359000A596C3 /* EditSingleCellDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSingleCellDataViewController.swift; sourceTree = "<group>"; };
+		8BF9BEA221AC1774000CC3F5 /* NewBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBeerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +114,13 @@
 			children = (
 				8B0E41AF21A2FF7E0012FF27 /* AppDelegate.swift */,
 				8B0E41B121A2FF7E0012FF27 /* ViewController.swift */,
+				8BF9BEA221AC1774000CC3F5 /* NewBeerViewController.swift */,
 				8B0E41B321A2FF7E0012FF27 /* Main.storyboard */,
+				8B8EA06A21AC359000A596C3 /* EditSingleCellDataViewController.swift */,
+				8B8EA06821AC29E300A596C3 /* EditAppDataViewController.swift */,
+				8B8EA06621AC292900A596C3 /* DiscoverBeerViewController.swift */,
+				8B8EA06421AC286400A596C3 /* SearchBeerViewController.swift */,
+				8B8EA06221AC271D00A596C3 /* AccueilViewController.swift */,
 				8B0E41B621A2FF7E0012FF27 /* Assets.xcassets */,
 				8B0E41B821A2FF7E0012FF27 /* LaunchScreen.storyboard */,
 				8B0E41BB21A2FF7E0012FF27 /* Info.plist */,
@@ -262,7 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8EA06521AC286400A596C3 /* SearchBeerViewController.swift in Sources */,
+				8B8EA06321AC271D00A596C3 /* AccueilViewController.swift in Sources */,
+				8B8EA06921AC29E300A596C3 /* EditAppDataViewController.swift in Sources */,
+				8B8EA06721AC292900A596C3 /* DiscoverBeerViewController.swift in Sources */,
+				8B8EA06B21AC359000A596C3 /* EditSingleCellDataViewController.swift in Sources */,
 				8B0E41B221A2FF7E0012FF27 /* ViewController.swift in Sources */,
+				8BF9BEA321AC1774000CC3F5 /* NewBeerViewController.swift in Sources */,
 				8B0E41B021A2FF7E0012FF27 /* AppDelegate.swift in Sources */,
 				8B5CDE8B21A40D3300CD2C4A /* Model.xcdatamodeld in Sources */,
 			);

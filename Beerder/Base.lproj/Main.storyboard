@@ -13,7 +13,7 @@
         <!--Accueil-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Accueil" customClass="ViewController" customModule="Beerder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Accueil" customClass="AccueilViewController" customModule="Beerder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNm-eS-QZ8">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="301.5"/>
-                                        <state key="normal" title="Gestion Bière"/>
+                                        <state key="normal" title="Gestion du contenu"/>
                                         <connections>
                                             <segue destination="9BS-51-yck" kind="show" id="Pp3-ui-4UN"/>
                                         </connections>
@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="452" y="27.436281859070466"/>
         </scene>
-        <!--Title-->
+        <!--Découverte bière-->
         <scene sceneID="YZ0-Uo-mF9">
             <objects>
-                <viewController id="hdv-4C-KIh" sceneMemberID="viewController">
+                <viewController id="hdv-4C-KIh" userLabel="Découverte bière" customClass="DiscoverBeerViewController" customModule="Beerder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fE3-WL-McK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,46 +100,47 @@
             </objects>
             <point key="canvasLocation" x="1428" y="-700"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit App Data View Controller-->
         <scene sceneID="c33-yS-bC4">
             <objects>
-                <viewController id="9BS-51-yck" sceneMemberID="viewController">
+                <viewController id="9BS-51-yck" customClass="EditAppDataViewController" customModule="Beerder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EJz-mA-Ohs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBb-kT-53P">
-                                <rect key="frame" x="0.0" y="64" width="375" height="301.5"/>
-                                <state key="normal" title="Ajouter Bière"/>
-                                <connections>
-                                    <segue destination="9Li-fl-efG" kind="show" id="y5G-hT-ce6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mr-Gc-ajY">
-                                <rect key="frame" x="0.0" y="365.5" width="375" height="301.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mr-Gc-ajY">
+                                <rect key="frame" x="0.0" y="146" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Modifier Bière"/>
                                 <connections>
                                     <segue destination="9BY-Su-kga" kind="show" id="lcP-9Y-FVA"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gCj-dJ-zXD">
+                                <rect key="frame" x="30" y="76" width="315" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Bière"/>
+                                    <segment title="Bar"/>
+                                    <segment title="Marque"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBb-kT-53P">
+                                <rect key="frame" x="0.0" y="116" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ajouter Bière"/>
+                                <connections>
+                                    <segue destination="9Li-fl-efG" kind="show" id="y5G-hT-ce6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Zkq-Xn-fTf" firstAttribute="trailing" secondItem="EBb-kT-53P" secondAttribute="trailing" id="3sd-ew-zCr"/>
-                            <constraint firstItem="Zkq-Xn-fTf" firstAttribute="trailing" secondItem="5Mr-Gc-ajY" secondAttribute="trailing" id="D2g-Jg-7ge"/>
-                            <constraint firstItem="EBb-kT-53P" firstAttribute="top" secondItem="Zkq-Xn-fTf" secondAttribute="top" id="XWf-sk-LMU"/>
-                            <constraint firstItem="5Mr-Gc-ajY" firstAttribute="leading" secondItem="Zkq-Xn-fTf" secondAttribute="leading" id="iZH-iD-m86"/>
-                            <constraint firstItem="5Mr-Gc-ajY" firstAttribute="top" secondItem="EBb-kT-53P" secondAttribute="bottom" id="mVg-sc-YT8"/>
-                            <constraint firstItem="Zkq-Xn-fTf" firstAttribute="bottom" secondItem="5Mr-Gc-ajY" secondAttribute="bottom" id="nay-Sm-Qzq"/>
-                            <constraint firstItem="5Mr-Gc-ajY" firstAttribute="height" secondItem="EBb-kT-53P" secondAttribute="height" id="obo-1b-lLP"/>
-                            <constraint firstItem="EBb-kT-53P" firstAttribute="leading" secondItem="Zkq-Xn-fTf" secondAttribute="leading" id="qMT-eC-fbK"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Zkq-Xn-fTf"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNv-Hz-ND5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1089" y="862"/>
+            <point key="canvasLocation" x="1088.8" y="861.3193403298352"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="gpU-8V-5mW">
@@ -150,81 +151,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="WkQ-v7-87r">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="beerCell" id="SgN-W8-oif">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WkQ-v7-87r" id="Kds-L7-0LW">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="mcq-3f-eox">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mcq-3f-eox" id="dGD-u2-TVf">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tWa-Aa-6bn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom de la bière" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VE9-Ui-wyx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="43.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ne2-xR-Nud">
-                                                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="43.5"/>
-                                                    <state key="normal" title="Editer"/>
-                                                    <connections>
-                                                        <segue destination="gJq-Yq-Pvf" kind="show" id="LoI-Rp-z3p"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                        </stackView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="tWa-Aa-6bn" firstAttribute="top" secondItem="dGD-u2-TVf" secondAttribute="top" id="RVE-k2-TCz"/>
-                                        <constraint firstAttribute="bottom" secondItem="tWa-Aa-6bn" secondAttribute="bottom" id="RuP-el-6s2"/>
-                                        <constraint firstAttribute="trailing" secondItem="tWa-Aa-6bn" secondAttribute="trailing" id="fYr-Ti-IFY"/>
-                                        <constraint firstItem="tWa-Aa-6bn" firstAttribute="leading" secondItem="dGD-u2-TVf" secondAttribute="leading" id="mtu-Pi-TS6"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="fbB-Pq-dDc">
-                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fbB-Pq-dDc" id="JfB-pZ-4Jr">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6sc-Gh-zwj">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom de la bière" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHR-4g-zTy">
-                                                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="43.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1s-ld-fH5">
-                                                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="43.5"/>
-                                                    <state key="normal" title="Editer"/>
-                                                </button>
-                                            </subviews>
-                                        </stackView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="6sc-Gh-zwj" firstAttribute="leading" secondItem="JfB-pZ-4Jr" secondAttribute="leading" id="GNa-Tx-Uef"/>
-                                        <constraint firstAttribute="trailing" secondItem="6sc-Gh-zwj" secondAttribute="trailing" id="Kmw-Gg-kQ9"/>
-                                        <constraint firstItem="6sc-Gh-zwj" firstAttribute="top" secondItem="JfB-pZ-4Jr" secondAttribute="top" id="Nkk-dl-OhC"/>
-                                        <constraint firstAttribute="bottom" secondItem="6sc-Gh-zwj" secondAttribute="bottom" id="VRs-ws-Yao"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="SgN-W8-oif">
-                                <rect key="frame" x="0.0" y="160" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SgN-W8-oif" id="ewj-Gp-hXe">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -242,6 +170,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hma-Pd-Gnn">
                                                     <rect key="frame" x="187.5" y="0.0" width="187.5" height="43.5"/>
                                                     <state key="normal" title="Editer"/>
+                                                    <connections>
+                                                        <segue destination="gJq-Yq-Pvf" kind="show" id="XNr-tU-d5T"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>
@@ -264,7 +195,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cjh-ZU-48R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2434" y="1336"/>
+            <point key="canvasLocation" x="2039" y="1789"/>
         </scene>
         <!--Title-->
         <scene sceneID="YNI-gV-Lsc">
@@ -486,12 +417,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WaM-Dv-zdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3524" y="1334.4827586206898"/>
+            <point key="canvasLocation" x="3262" y="1789"/>
         </scene>
-        <!--View Controller-->
+        <!--Recherche spécifique-->
         <scene sceneID="SOY-bP-j0m">
             <objects>
-                <viewController id="sKa-dA-eq6" sceneMemberID="viewController">
+                <viewController id="sKa-dA-eq6" userLabel="Recherche spécifique" customClass="SearchBeerViewController" customModule="Beerder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z0z-Cv-dX1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -510,10 +441,10 @@
             </objects>
             <point key="canvasLocation" x="1428" y="26.53673163418291"/>
         </scene>
-        <!--View Controller-->
+        <!--New Beer View Controller-->
         <scene sceneID="hM6-uU-ZoT">
             <objects>
-                <viewController id="9Li-fl-efG" sceneMemberID="viewController">
+                <viewController id="9Li-fl-efG" customClass="NewBeerViewController" customModule="Beerder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UxZ-Ju-Pbm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -649,7 +580,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i4a-hb-UEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2772" y="608.54572713643188"/>
+            <point key="canvasLocation" x="2039" y="911"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kWC-Ik-7rh">
