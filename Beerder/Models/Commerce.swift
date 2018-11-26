@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 struct Bar{
     var place: String
@@ -22,4 +23,5 @@ struct Bar{
         self.note = 0
         self.schedule = schedule
     }
+    
 }

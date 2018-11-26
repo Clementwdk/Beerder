@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import CoreData
 
 struct Brand{
     var name : String
     var place : String
-    var note : Int8
+    var note : Int16
     var history: String
 
     init(name: String, place: String, history: String){
@@ -20,5 +21,4 @@ struct Brand{
         self.history = history
         self.note = 0
     }
-    
 }
