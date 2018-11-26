@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13533" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Bar" representedClassName="Bar" syncable="YES" codeGenerationType="class">
+        <attribute name="adresse" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="horraire" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="prix" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="itemsBeer" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Beer" inverseName="bar" inverseEntity="Beer" syncable="YES"/>
+    </entity>
+    <entity name="Beer" representedClassName="Beer" syncable="YES" codeGenerationType="class">
+        <attribute name="barCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="power" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bar" inverseName="itemsBeer" inverseEntity="Bar" syncable="YES"/>
+        <relationship name="brand" maxCount="1" deletionRule="Nullify" destinationEntity="Brand" inverseName="products" inverseEntity="Brand" syncable="YES"/>
+    </entity>
+    <entity name="Brand" representedClassName="Brand" syncable="YES" codeGenerationType="class">
+        <attribute name="history" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="place" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Beer" inverseName="brand" inverseEntity="Beer" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Bar" positionX="16" positionY="-36" width="128" height="133"/>
+        <element name="Beer" positionX="-207" positionY="230" width="128" height="148"/>
+        <element name="Brand" positionX="-387" positionY="-27" width="128" height="118"/>
+    </elements>
+</model>
