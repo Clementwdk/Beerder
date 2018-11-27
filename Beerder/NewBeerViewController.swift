@@ -41,7 +41,16 @@ class NewBeerViewController: UIViewController {
             
             let newBeer = NSEntityDescription.insertNewObject(forEntityName: "Beer", into: context)
             newBeer.setValue(Nom.text,forKey: "name")
+            
+            for res in TestPrintData(AttributBDD: "brand"){
+            if (res == Marque.text){
             newBeer.setValue(Marque.text, forKey: "brand")
+                break
+            }
+            else{
+            print("La marque n'existe pas")
+                }}
+            
             newBeer.setValue(type.text, forKey: "type")
             newBeer.setValue(Puissan.text, forKey : "power")
             newBeer.setValue(Comment.text, forKey : "comment")
@@ -61,8 +70,10 @@ class NewBeerViewController: UIViewController {
         }
     
 }
-    func TestPrintData()
+    func TestPrintData(AttributBDD : String) ->  Array<String>
     {
+        var myArray: [String] = []
+        var i = 0
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
@@ -75,9 +86,11 @@ class NewBeerViewController: UIViewController {
             
             if results.count > 0 {
                 for r in results as! [NSManagedObject]{
-                    if let nameB = r.value(forKey: "name") as? String{
-                        print(nameB)
-                    }
+                    i+=1
+                    if let nameB = r.value(forKey: AttributBDD) as? String{
+                        //print(nameB)
+                        myArray.insert(nameB, at : i)
+                   }
                 }
             }
                 
@@ -85,5 +98,7 @@ class NewBeerViewController: UIViewController {
         }catch {
             print("Error Affichage données")
         }
+          return myArray
     }
+  
 }
