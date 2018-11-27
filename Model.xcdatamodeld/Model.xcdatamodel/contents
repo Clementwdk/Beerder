@@ -10,6 +10,7 @@
     </entity>
     <entity name="Beer" representedClassName="Beer" syncable="YES" codeGenerationType="class">
         <attribute name="barCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="photo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="power" optional="YES" attributeType="String" syncable="YES"/>
@@ -26,7 +27,7 @@
     </entity>
     <elements>
         <element name="Bar" positionX="16" positionY="-36" width="128" height="133"/>
-        <element name="Beer" positionX="-207" positionY="230" width="128" height="148"/>
+        <element name="Beer" positionX="-207" positionY="230" width="128" height="165"/>
         <element name="Brand" positionX="-387" positionY="-27" width="128" height="118"/>
     </elements>
 </model>

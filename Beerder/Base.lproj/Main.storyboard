@@ -475,6 +475,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJB-wn-IAv">
                                         <rect key="frame" x="0.0" y="0.0" width="47" height="30"/>
                                         <state key="normal" title="Valider"/>
+                                        <connections>
+                                            <action selector="PushButtonValid:" destination="9Li-fl-efG" eventType="touchUpInside" id="KPe-nM-jRP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -494,7 +497,6 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="979-fT-2MU">
                                                 <rect key="frame" x="186.5" y="0.0" width="186.5" height="50.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -574,6 +576,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="GK8-pf-UrQ"/>
                     </view>
+                    <connections>
+                        <outlet property="Comment" destination="979-fT-2MU" id="qX6-WI-hTV"/>
+                        <outlet property="Marque" destination="0LH-03-25X" id="wLc-MS-yPY"/>
+                        <outlet property="Nom" destination="hzX-r6-Zan" id="WDl-OL-uHD"/>
+                        <outlet property="Puissance" destination="ZY7-eX-9Ve" id="7qr-9o-QyE"/>
+                        <outlet property="Type" destination="Zdy-Ss-ARP" id="Vk6-22-V2Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i4a-hb-UEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
