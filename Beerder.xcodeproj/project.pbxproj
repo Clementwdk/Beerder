@@ -20,6 +20,8 @@
 		8B8EA06721AC292900A596C3 /* DiscoverBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06621AC292900A596C3 /* DiscoverBeerViewController.swift */; };
 		8B8EA06921AC29E300A596C3 /* EditAppDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06821AC29E300A596C3 /* EditAppDataViewController.swift */; };
 		8B8EA06B21AC359000A596C3 /* EditSingleCellDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06A21AC359000A596C3 /* EditSingleCellDataViewController.swift */; };
+		8B8EA06D21AC56D400A596C3 /* NewBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06C21AC56D400A596C3 /* NewBrandViewController.swift */; };
+		8B8EA06F21AC56FC00A596C3 /* NewBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06E21AC56FC00A596C3 /* NewBarViewController.swift */; };
 		8BF9BEA321AC1774000CC3F5 /* NewBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF9BEA221AC1774000CC3F5 /* NewBeerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		8B8EA06621AC292900A596C3 /* DiscoverBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverBeerViewController.swift; sourceTree = "<group>"; };
 		8B8EA06821AC29E300A596C3 /* EditAppDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAppDataViewController.swift; sourceTree = "<group>"; };
 		8B8EA06A21AC359000A596C3 /* EditSingleCellDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSingleCellDataViewController.swift; sourceTree = "<group>"; };
+		8B8EA06C21AC56D400A596C3 /* NewBrandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBrandViewController.swift; sourceTree = "<group>"; };
+		8B8EA06E21AC56FC00A596C3 /* NewBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBarViewController.swift; sourceTree = "<group>"; };
 		8BF9BEA221AC1774000CC3F5 /* NewBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBeerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +120,8 @@
 				8B0E41B121A2FF7E0012FF27 /* ViewController.swift */,
 				8BF9BEA221AC1774000CC3F5 /* NewBeerViewController.swift */,
 				8B0E41B321A2FF7E0012FF27 /* Main.storyboard */,
+				8B8EA06C21AC56D400A596C3 /* NewBrandViewController.swift */,
+				8B8EA06E21AC56FC00A596C3 /* NewBarViewController.swift */,
 				8B8EA06A21AC359000A596C3 /* EditSingleCellDataViewController.swift */,
 				8B8EA06821AC29E300A596C3 /* EditAppDataViewController.swift */,
 				8B8EA06621AC292900A596C3 /* DiscoverBeerViewController.swift */,
@@ -280,11 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8EA06F21AC56FC00A596C3 /* NewBarViewController.swift in Sources */,
 				8B8EA06521AC286400A596C3 /* SearchBeerViewController.swift in Sources */,
 				8B8EA06321AC271D00A596C3 /* AccueilViewController.swift in Sources */,
 				8B8EA06921AC29E300A596C3 /* EditAppDataViewController.swift in Sources */,
 				8B8EA06721AC292900A596C3 /* DiscoverBeerViewController.swift in Sources */,
 				8B8EA06B21AC359000A596C3 /* EditSingleCellDataViewController.swift in Sources */,
+				8B8EA06D21AC56D400A596C3 /* NewBrandViewController.swift in Sources */,
 				8B0E41B221A2FF7E0012FF27 /* ViewController.swift in Sources */,
 				8BF9BEA321AC1774000CC3F5 /* NewBeerViewController.swift in Sources */,
 				8B0E41B021A2FF7E0012FF27 /* AppDelegate.swift in Sources */,
