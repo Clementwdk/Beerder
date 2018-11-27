@@ -51,7 +51,7 @@ class EditAppDataViewController: UIViewController {
             //performSegue(withIdentifier: Add, sender: NewBeerViewController)
             performSegue(withIdentifier: "NewBrandScreen", sender: nil)
         default:
-            print("rien a evnoyer")
+            print("rien à envoyer")
         }
     }
 
