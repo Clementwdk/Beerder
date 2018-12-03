@@ -14,9 +14,10 @@ class NewBeerViewController: UIViewController {
     @IBOutlet weak var Comment: UITextView!
     @IBOutlet weak var Puissan: UITextField!
     @IBOutlet weak var Marque: UITextField!
-    @IBOutlet weak var type: UITextField!
     @IBOutlet weak var Nom: UITextField!
-   
+    // j'ai changé le Type en catégorie, swift recommende de ne pas l'utiliser car il peut interferer avec l'expression foo.Type
+    @IBOutlet weak var Categorie: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -24,7 +25,7 @@ class NewBeerViewController: UIViewController {
    
     
     func CheckCaseEmptyOrNot() -> Bool {
-        if (Nom.text?.isEmpty == true && Puissan.text?.isEmpty == true && Marque.text?.isEmpty == true && type.text?.isEmpty == true)
+        if (Nom.text?.isEmpty == true && Puissan.text?.isEmpty == true && Marque.text?.isEmpty == true && Categorie.text?.isEmpty == true)
         {
             return true
         }
@@ -51,7 +52,7 @@ class NewBeerViewController: UIViewController {
             print("La marque n'existe pas")
                 }}
             
-            newBeer.setValue(type.text, forKey: "type")
+            newBeer.setValue(Categorie.text, forKey: "type")
             newBeer.setValue(Puissan.text, forKey : "power")
             newBeer.setValue(Comment.text, forKey : "comment")
             

@@ -12,7 +12,7 @@ class EditAppDataViewController: UIViewController {
 
     @IBOutlet weak var EditDataButton: UIButton!
     @IBOutlet weak var AddDataButton: UIButton!
-    @IBAction func BeerChangedView(_ sender: Any) {
+   @IBAction func BeerChangedView(_ sender: Any) {
         let segmentedIndex = AppDataTypeSegmentedController.selectedSegmentIndex
         print(segmentedIndex)
         
@@ -32,23 +32,31 @@ class EditAppDataViewController: UIViewController {
             AddDataButton.setTitle("Ajouter marque", for: .normal)
             EditDataButton.setTitle("Modifier marque", for: .normal)
         default:
-            print("rien de sélectionné")
+            print("rien de sélectionné (même si peu plausible :)")
         }
-        
+    
     }
     @IBAction func EditDataButtonSwitch(_ sender: UIButton) {
+        let segmentedIndex = AppDataTypeSegmentedController.selectedSegmentIndex
+        switch segmentedIndex{
+        case 0:
+            performSegue(withIdentifier: "ShowEditBeerScreen", sender: nil)
+        case 1:
+            performSegue(withIdentifier: "ShowEditBarScreen", sender: nil)
+        case 2:
+            performSegue(withIdentifier: "ShowEditBarScreen", sender: nil)
+        default:
+            print("rien à envoyer")
+        }
     }
     @IBAction func AddDataButtonSwitch(_ sender: UIButton) {
         let segmentedIndex = AppDataTypeSegmentedController.selectedSegmentIndex
         switch segmentedIndex{
         case 0:
-            //performSegue(withIdentifier: Add, sender: NewBeerViewController)
             performSegue(withIdentifier: "NewBeerScreen", sender: nil)
         case 1:
-            //performSegue(withIdentifier: Add, sender: NewBeerViewController)
             performSegue(withIdentifier: "NewBarScreen", sender: nil)
         case 2:
-            //performSegue(withIdentifier: Add, sender: NewBeerViewController)
             performSegue(withIdentifier: "NewBrandScreen", sender: nil)
         default:
             print("rien à envoyer")

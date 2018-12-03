@@ -15,11 +15,21 @@
 		8B0E41C521A2FF7E0012FF27 /* BeerderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E41C421A2FF7E0012FF27 /* BeerderTests.swift */; };
 		8B0E41D021A2FF7E0012FF27 /* BeerderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E41CF21A2FF7E0012FF27 /* BeerderUITests.swift */; };
 		8B5CDE8B21A40D3300CD2C4A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B5CDE8921A40D3300CD2C4A /* Model.xcdatamodeld */; };
+		8B7D90F121B5311500932E31 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D90F021B5311500932E31 /* BeerListViewController.swift */; };
+		8B7D90F321B5312800932E31 /* BrandListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D90F221B5312800932E31 /* BrandListViewController.swift */; };
+		8B7D90F521B5313800932E31 /* BarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D90F421B5313800932E31 /* BarListViewController.swift */; };
+		8B7D90F721B531C500932E31 /* SearchBoxResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D90F621B531C500932E31 /* SearchBoxResultViewController.swift */; };
+		8B7D90F921B531DC00932E31 /* ScanCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D90F821B531DC00932E31 /* ScanCodeViewController.swift */; };
+		8B7D90FB21B531F300932E31 /* HistoryBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D90FA21B531F300932E31 /* HistoryBeerViewController.swift */; };
+		8B7D90FD21B5350E00932E31 /* EditSingleBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D90FC21B5350E00932E31 /* EditSingleBrandViewController.swift */; };
+		8B7D90FF21B5351E00932E31 /* EditSingleBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D90FE21B5351E00932E31 /* EditSingleBarViewController.swift */; };
+		8B7D910121B5354300932E31 /* BeerPagePresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D910021B5354300932E31 /* BeerPagePresentationViewController.swift */; };
+		8B8CB0B321AD4E5700067380 /* EditSingleBeerSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CB0B221AD4E5700067380 /* EditSingleBeerSelectionViewController.swift */; };
+		8B8CB0BB21AD528500067380 /* AddDataSendingResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CB0BA21AD528500067380 /* AddDataSendingResultViewController.swift */; };
 		8B8EA06321AC271D00A596C3 /* AccueilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06221AC271D00A596C3 /* AccueilViewController.swift */; };
 		8B8EA06521AC286400A596C3 /* SearchBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06421AC286400A596C3 /* SearchBeerViewController.swift */; };
 		8B8EA06721AC292900A596C3 /* DiscoverBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06621AC292900A596C3 /* DiscoverBeerViewController.swift */; };
 		8B8EA06921AC29E300A596C3 /* EditAppDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06821AC29E300A596C3 /* EditAppDataViewController.swift */; };
-		8B8EA06B21AC359000A596C3 /* EditSingleCellDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06A21AC359000A596C3 /* EditSingleCellDataViewController.swift */; };
 		8B8EA06D21AC56D400A596C3 /* NewBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06C21AC56D400A596C3 /* NewBrandViewController.swift */; };
 		8B8EA06F21AC56FC00A596C3 /* NewBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06E21AC56FC00A596C3 /* NewBarViewController.swift */; };
 		8BF9BEA321AC1774000CC3F5 /* NewBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF9BEA221AC1774000CC3F5 /* NewBeerViewController.swift */; };
@@ -57,11 +67,21 @@
 		8B0E41CF21A2FF7E0012FF27 /* BeerderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerderUITests.swift; sourceTree = "<group>"; };
 		8B0E41D121A2FF7E0012FF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B5CDE8A21A40D3300CD2C4A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8B7D90F021B5311500932E31 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
+		8B7D90F221B5312800932E31 /* BrandListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandListViewController.swift; sourceTree = "<group>"; };
+		8B7D90F421B5313800932E31 /* BarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarListViewController.swift; sourceTree = "<group>"; };
+		8B7D90F621B531C500932E31 /* SearchBoxResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBoxResultViewController.swift; sourceTree = "<group>"; };
+		8B7D90F821B531DC00932E31 /* ScanCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCodeViewController.swift; sourceTree = "<group>"; };
+		8B7D90FA21B531F300932E31 /* HistoryBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryBeerViewController.swift; sourceTree = "<group>"; };
+		8B7D90FC21B5350E00932E31 /* EditSingleBrandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSingleBrandViewController.swift; sourceTree = "<group>"; };
+		8B7D90FE21B5351E00932E31 /* EditSingleBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSingleBarViewController.swift; sourceTree = "<group>"; };
+		8B7D910021B5354300932E31 /* BeerPagePresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerPagePresentationViewController.swift; sourceTree = "<group>"; };
+		8B8CB0B221AD4E5700067380 /* EditSingleBeerSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSingleBeerSelectionViewController.swift; sourceTree = "<group>"; };
+		8B8CB0BA21AD528500067380 /* AddDataSendingResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataSendingResultViewController.swift; sourceTree = "<group>"; };
 		8B8EA06221AC271D00A596C3 /* AccueilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccueilViewController.swift; sourceTree = "<group>"; };
 		8B8EA06421AC286400A596C3 /* SearchBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBeerViewController.swift; sourceTree = "<group>"; };
 		8B8EA06621AC292900A596C3 /* DiscoverBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverBeerViewController.swift; sourceTree = "<group>"; };
 		8B8EA06821AC29E300A596C3 /* EditAppDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAppDataViewController.swift; sourceTree = "<group>"; };
-		8B8EA06A21AC359000A596C3 /* EditSingleCellDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSingleCellDataViewController.swift; sourceTree = "<group>"; };
 		8B8EA06C21AC56D400A596C3 /* NewBrandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBrandViewController.swift; sourceTree = "<group>"; };
 		8B8EA06E21AC56FC00A596C3 /* NewBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBarViewController.swift; sourceTree = "<group>"; };
 		8BF9BEA221AC1774000CC3F5 /* NewBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBeerViewController.swift; sourceTree = "<group>"; };
@@ -116,16 +136,13 @@
 		8B0E41AE21A2FF7E0012FF27 /* Beerder */ = {
 			isa = PBXGroup;
 			children = (
+				8B6A903521B5245C00F45E71 /* DiscoverZoneDataControllers */,
+				8B6A903421B5243700F45E71 /* SearchZoneDataControllers */,
+				8B8CB0B721AD4FEE00067380 /* EditZoneDataControllers */,
+				8B8CB0B621AD4FD900067380 /* AddZoneDataControllers */,
 				8B0E41AF21A2FF7E0012FF27 /* AppDelegate.swift */,
 				8B0E41B121A2FF7E0012FF27 /* ViewController.swift */,
-				8BF9BEA221AC1774000CC3F5 /* NewBeerViewController.swift */,
 				8B0E41B321A2FF7E0012FF27 /* Main.storyboard */,
-				8B8EA06C21AC56D400A596C3 /* NewBrandViewController.swift */,
-				8B8EA06E21AC56FC00A596C3 /* NewBarViewController.swift */,
-				8B8EA06A21AC359000A596C3 /* EditSingleCellDataViewController.swift */,
-				8B8EA06821AC29E300A596C3 /* EditAppDataViewController.swift */,
-				8B8EA06621AC292900A596C3 /* DiscoverBeerViewController.swift */,
-				8B8EA06421AC286400A596C3 /* SearchBeerViewController.swift */,
 				8B8EA06221AC271D00A596C3 /* AccueilViewController.swift */,
 				8B0E41B621A2FF7E0012FF27 /* Assets.xcassets */,
 				8B0E41B821A2FF7E0012FF27 /* LaunchScreen.storyboard */,
@@ -150,6 +167,51 @@
 				8B0E41D121A2FF7E0012FF27 /* Info.plist */,
 			);
 			path = BeerderUITests;
+			sourceTree = "<group>";
+		};
+		8B6A903421B5243700F45E71 /* SearchZoneDataControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B8EA06421AC286400A596C3 /* SearchBeerViewController.swift */,
+				8B7D90F621B531C500932E31 /* SearchBoxResultViewController.swift */,
+				8B7D90F821B531DC00932E31 /* ScanCodeViewController.swift */,
+				8B7D90FA21B531F300932E31 /* HistoryBeerViewController.swift */,
+			);
+			path = SearchZoneDataControllers;
+			sourceTree = "<group>";
+		};
+		8B6A903521B5245C00F45E71 /* DiscoverZoneDataControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B8EA06621AC292900A596C3 /* DiscoverBeerViewController.swift */,
+				8B7D910021B5354300932E31 /* BeerPagePresentationViewController.swift */,
+			);
+			path = DiscoverZoneDataControllers;
+			sourceTree = "<group>";
+		};
+		8B8CB0B621AD4FD900067380 /* AddZoneDataControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B8EA06E21AC56FC00A596C3 /* NewBarViewController.swift */,
+				8B8EA06C21AC56D400A596C3 /* NewBrandViewController.swift */,
+				8BF9BEA221AC1774000CC3F5 /* NewBeerViewController.swift */,
+				8B8CB0BA21AD528500067380 /* AddDataSendingResultViewController.swift */,
+			);
+			path = AddZoneDataControllers;
+			sourceTree = "<group>";
+		};
+		8B8CB0B721AD4FEE00067380 /* EditZoneDataControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B8CB0B221AD4E5700067380 /* EditSingleBeerSelectionViewController.swift */,
+				8B8EA06821AC29E300A596C3 /* EditAppDataViewController.swift */,
+				8B7D90F021B5311500932E31 /* BeerListViewController.swift */,
+				8B7D90F221B5312800932E31 /* BrandListViewController.swift */,
+				8B7D90F421B5313800932E31 /* BarListViewController.swift */,
+				8B7D90FC21B5350E00932E31 /* EditSingleBrandViewController.swift */,
+				8B7D90FE21B5351E00932E31 /* EditSingleBarViewController.swift */,
+			);
+			path = EditZoneDataControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,14 +349,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B8EA06F21AC56FC00A596C3 /* NewBarViewController.swift in Sources */,
+				8B7D90F321B5312800932E31 /* BrandListViewController.swift in Sources */,
+				8B7D90FB21B531F300932E31 /* HistoryBeerViewController.swift in Sources */,
+				8B7D90FD21B5350E00932E31 /* EditSingleBrandViewController.swift in Sources */,
+				8B8CB0BB21AD528500067380 /* AddDataSendingResultViewController.swift in Sources */,
+				8B7D90F121B5311500932E31 /* BeerListViewController.swift in Sources */,
+				8B7D90F921B531DC00932E31 /* ScanCodeViewController.swift in Sources */,
 				8B8EA06521AC286400A596C3 /* SearchBeerViewController.swift in Sources */,
+				8B8CB0B321AD4E5700067380 /* EditSingleBeerSelectionViewController.swift in Sources */,
+				8B7D90F521B5313800932E31 /* BarListViewController.swift in Sources */,
 				8B8EA06321AC271D00A596C3 /* AccueilViewController.swift in Sources */,
 				8B8EA06921AC29E300A596C3 /* EditAppDataViewController.swift in Sources */,
 				8B8EA06721AC292900A596C3 /* DiscoverBeerViewController.swift in Sources */,
-				8B8EA06B21AC359000A596C3 /* EditSingleCellDataViewController.swift in Sources */,
+				8B7D90F721B531C500932E31 /* SearchBoxResultViewController.swift in Sources */,
 				8B8EA06D21AC56D400A596C3 /* NewBrandViewController.swift in Sources */,
 				8B0E41B221A2FF7E0012FF27 /* ViewController.swift in Sources */,
+				8B7D90FF21B5351E00932E31 /* EditSingleBarViewController.swift in Sources */,
 				8BF9BEA321AC1774000CC3F5 /* NewBeerViewController.swift in Sources */,
+				8B7D910121B5354300932E31 /* BeerPagePresentationViewController.swift in Sources */,
 				8B0E41B021A2FF7E0012FF27 /* AppDelegate.swift in Sources */,
 				8B5CDE8B21A40D3300CD2C4A /* Model.xcdatamodeld in Sources */,
 			);

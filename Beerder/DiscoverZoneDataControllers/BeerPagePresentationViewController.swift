@@ -1,14 +1,14 @@
 //
-//  EditSingleCellDataViewController.swift
+//  BeerPagePresentationViewController.swift
 //  Beerder
 //
-//  Created by Developer on 26/11/2018.
+//  Created by Developer on 03/12/2018.
 //  Copyright © 2018 Developer. All rights reserved.
 //
 
 import UIKit
 
-class EditSingleCellDataViewController: UIViewController {
+class BeerPagePresentationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
