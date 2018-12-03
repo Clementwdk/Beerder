@@ -144,7 +144,7 @@
                         <outlet property="AddDataButton" destination="EBb-kT-53P" id="nQC-3a-4Fv"/>
                         <outlet property="AppDataTypeSegmentedController" destination="gCj-dJ-zXD" id="zST-pD-ggA"/>
                         <outlet property="EditDataButton" destination="5Mr-Gc-ajY" id="rfb-TS-XNY"/>
-                        <segue destination="9Li-fl-efG" kind="show" identifier="NewBeerScreen" id="L8R-Wo-Abn"/>
+                        <segue destination="9Li-fl-efG" kind="push" identifier="NewBeerTest" id="L8R-Wo-Abn"/>
                         <segue destination="hrz-YF-jFt" kind="show" identifier="NewBarScreen" id="CWW-rq-V1O"/>
                         <segue destination="S8d-mx-XPG" kind="show" identifier="NewBrandScreen" id="uo8-hK-N5z"/>
                         <segue destination="9BY-Su-kga" kind="show" identifier="ShowEditBeerScreen" id="w4I-zJ-JC1"/>
@@ -820,6 +820,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="GK8-pf-UrQ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Vwv-QR-wpa"/>
                     <connections>
                         <outlet property="Categorie" destination="Zdy-Ss-ARP" id="P6u-xJ-tCd"/>
                         <outlet property="Comment" destination="979-fT-2MU" id="qX6-WI-hTV"/>
@@ -1515,7 +1516,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eMr-ui-ot8"/>
-        <segue reference="RvU-Ye-TEO"/>
+        <segue reference="akD-Eq-JbE"/>
+        <segue reference="5qP-No-jLh"/>
     </inferredMetricsTieBreakers>
 </document>

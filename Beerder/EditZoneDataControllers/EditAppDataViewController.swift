@@ -53,7 +53,7 @@ class EditAppDataViewController: UIViewController {
         let segmentedIndex = AppDataTypeSegmentedController.selectedSegmentIndex
         switch segmentedIndex{
         case 0:
-            performSegue(withIdentifier: "NewBeerScreen", sender: nil)
+            performSegue(withIdentifier: "NewBeerTest", sender: nil)
         case 1:
             performSegue(withIdentifier: "NewBarScreen", sender: nil)
         case 2:
