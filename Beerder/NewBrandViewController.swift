@@ -64,29 +64,9 @@ class NewBrandViewController: UIViewController {
         {
             print ("Veuillez remplir tous les champs")
         }
-            
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
-            let managedContext = appDelegate.persistentContainer.viewContext
-            let beerEntity = NSEntityDescription.entity(forEntityName: "Brand", in: managedContext)!
- 
-            
-            let newBeer = NSManagedObject(entity : beerEntity ,insertInto : managedContext)
-             newBeer.setValue("Leffe",forKeyPath: "name")
-             newBeer.setValue("FRANCE" ,forKey: "place")
-             newBeer.setValue("BON", forKey : "history")
-            
-         do
-         {
-            try managedContext.save()
-            print("Save")
-         }
-         catch
-         {
-            print("Erreur !! impossible de sauvegarder les données")
-         }
-         }
-    
-        }
+                   
+   }
+}
 
     
 
