@@ -26,11 +26,11 @@ class NewBeerViewController: UIViewController {
     func CheckCaseEmptyOrNot() -> Bool {
         if (Nom.text?.isEmpty == true && Puissan.text?.isEmpty == true && Marque.text?.isEmpty == true && type.text?.isEmpty == true)
         {
-            return true
+            return false
         }
         else
         {
-            return false
+            return true
         }
     }
     @IBAction func PushButtonValid(_ sender: Any) {
