@@ -34,20 +34,17 @@ class NewBrandViewController: UIViewController {
     
     @IBAction func PushButtonValid(_ sender: Any)
     {
-        print("kc")
         if (CheckCaseEmptyOrNot()==true)
         {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
             
-            let newBeer = NSEntityDescription.insertNewObject(forEntityName: "Brand", into: context)
+            let newBrand = NSEntityDescription.insertNewObject(forEntityName: "Brand", into: context)
 
-            //newBeer.setValue(NameBrand.text,forKey: "name")
-            // newBeer.setValue(placeBrand.text, forKey: "place")
-           // newBeer.setValue(StoryBrand.text, forKey : "history")
-            newBeer.setValue("Leffe",forKey: "name")
-            newBeer.setValue("FRANCE" ,forKey: "place")
-            newBeer.setValue("BON", forKey : "history")
+            newBrand.setValue(NameBrand.text , forKey: "name")
+            newBrand.setValue(placeBrand.text , forKey: "place")
+            newBrand.setValue(StoryBrand.text , forKey : "history")
+            newBrand.setValue(NoteBrand.text, forKey: "note")
             
             do
             {
@@ -64,7 +61,7 @@ class NewBrandViewController: UIViewController {
         {
             print ("Veuillez remplir tous les champs")
         }
-                   
+        
    }
 }
 

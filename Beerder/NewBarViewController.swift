@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class NewBarViewController: UIViewController {
 
@@ -15,21 +16,41 @@ class NewBarViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBOutlet weak var adresse: UITextField!
+    @IBOutlet weak var horraire: UITextField!
+    @IBOutlet weak var note: UITextField!
+    @IBOutlet weak var prix: UITextField!
+    @IBOutlet weak var nom: UITextField!
+    
+    
+    @IBAction func PushButtonNewBar(_ sender: Any)
+    {
+        if (adresse.text != "" && horraire.text != "" && prix.text != "" && nom.text != "")
+        {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            
+            let newBar = NSEntityDescription.insertNewObject(forEntityName: "Bar", into: context)
+            
+            newBar.setValue(nom.text,forKey: "nom")
+            newBar.setValue(adresse.text, forKey: "adresse")
+            newBar.setValue(horraire.text, forKey : "horraire")
+            newBar.setValue(prix,forKey: "prix")
+            newBar.setValue(note ,forKey: "note")
+            
+            
+            do
+            {
+                try context.save()
+                print("Save")
+            }
+            catch
+            {
+                print("Erreur !! impossible de sauvegarder les données")
+            }
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

@@ -12,9 +12,9 @@ import CoreData
 class NewBeerViewController: UIViewController {
 
     @IBOutlet weak var Comment: UITextView!
-    @IBOutlet weak var Puissan: UITextField!
+    @IBOutlet weak var puissance: UITextField!
     @IBOutlet weak var Marque: UITextField!
-    @IBOutlet weak var type: UITextField!
+    @IBOutlet weak var typebe: UITextField!
     @IBOutlet weak var Nom: UITextField!
    
     override func viewDidLoad() {
@@ -22,9 +22,8 @@ class NewBeerViewController: UIViewController {
     }
 
    
-    
     func CheckCaseEmptyOrNot() -> Bool {
-        if (Nom.text?.isEmpty == true && Puissan.text?.isEmpty == true && Marque.text?.isEmpty == true && type.text?.isEmpty == true)
+        if (Nom.text?.isEmpty == true && puissance.text?.isEmpty == true && Marque.text?.isEmpty == true && typebe.text?.isEmpty == true)
         {
             return false
         }
@@ -51,8 +50,8 @@ class NewBeerViewController: UIViewController {
             print("La marque n'existe pas")
                 }}
             
-            newBeer.setValue(type.text, forKey: "type")
-            newBeer.setValue(Puissan.text, forKey : "power")
+            newBeer.setValue(typebe.text, forKey: "type")
+            newBeer.setValue(puissance.text, forKey : "power")
             newBeer.setValue(Comment.text, forKey : "comment")
             
             do
