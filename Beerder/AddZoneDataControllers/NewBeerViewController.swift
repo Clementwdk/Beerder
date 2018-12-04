@@ -12,7 +12,7 @@ import CoreData
 class NewBeerViewController: UIViewController {
 
     @IBOutlet weak var Comment: UITextView!
-    @IBOutlet weak var Puissan: UITextField!
+    @IBOutlet weak var puissance: UITextField!
     @IBOutlet weak var Marque: UITextField!
     @IBOutlet weak var Nom: UITextField!
     // j'ai changé le Type en catégorie, swift recommende de ne pas l'utiliser car il peut interferer avec l'expression foo.Type
@@ -23,7 +23,6 @@ class NewBeerViewController: UIViewController {
     }
 
    
-    
     func CheckCaseEmptyOrNot() -> Bool {
         if (Nom.text?.isEmpty == true && Puissan.text?.isEmpty == true && Marque.text?.isEmpty == true && Categorie.text?.isEmpty == true)
         {
