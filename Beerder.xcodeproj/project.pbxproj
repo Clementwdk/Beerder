@@ -32,6 +32,7 @@
 		8B8EA06921AC29E300A596C3 /* EditAppDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06821AC29E300A596C3 /* EditAppDataViewController.swift */; };
 		8B8EA06D21AC56D400A596C3 /* NewBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06C21AC56D400A596C3 /* NewBrandViewController.swift */; };
 		8B8EA06F21AC56FC00A596C3 /* NewBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EA06E21AC56FC00A596C3 /* NewBarViewController.swift */; };
+		8BA441CB21B6732900EE5219 /* EditDataResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA441CA21B6732900EE5219 /* EditDataResultViewController.swift */; };
 		8BF9BEA321AC1774000CC3F5 /* NewBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF9BEA221AC1774000CC3F5 /* NewBeerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		8B8EA06821AC29E300A596C3 /* EditAppDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAppDataViewController.swift; sourceTree = "<group>"; };
 		8B8EA06C21AC56D400A596C3 /* NewBrandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBrandViewController.swift; sourceTree = "<group>"; };
 		8B8EA06E21AC56FC00A596C3 /* NewBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBarViewController.swift; sourceTree = "<group>"; };
+		8BA441CA21B6732900EE5219 /* EditDataResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataResultViewController.swift; sourceTree = "<group>"; };
 		8BF9BEA221AC1774000CC3F5 /* NewBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBeerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,12 +205,13 @@
 		8B8CB0B721AD4FEE00067380 /* EditZoneDataControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8B8CB0B221AD4E5700067380 /* EditSingleBeerSelectionViewController.swift */,
+				8BA441CA21B6732900EE5219 /* EditDataResultViewController.swift */,
 				8B8EA06821AC29E300A596C3 /* EditAppDataViewController.swift */,
 				8B7D90F021B5311500932E31 /* BeerListViewController.swift */,
 				8B7D90F221B5312800932E31 /* BrandListViewController.swift */,
 				8B7D90F421B5313800932E31 /* BarListViewController.swift */,
 				8B7D90FC21B5350E00932E31 /* EditSingleBrandViewController.swift */,
+				8B8CB0B221AD4E5700067380 /* EditSingleBeerSelectionViewController.swift */,
 				8B7D90FE21B5351E00932E31 /* EditSingleBarViewController.swift */,
 			);
 			path = EditZoneDataControllers;
@@ -365,6 +368,7 @@
 				8B8EA06D21AC56D400A596C3 /* NewBrandViewController.swift in Sources */,
 				8B0E41B221A2FF7E0012FF27 /* ViewController.swift in Sources */,
 				8B7D90FF21B5351E00932E31 /* EditSingleBarViewController.swift in Sources */,
+				8BA441CB21B6732900EE5219 /* EditDataResultViewController.swift in Sources */,
 				8BF9BEA321AC1774000CC3F5 /* NewBeerViewController.swift in Sources */,
 				8B7D910121B5354300932E31 /* BeerPagePresentationViewController.swift in Sources */,
 				8B0E41B021A2FF7E0012FF27 /* AppDelegate.swift in Sources */,
